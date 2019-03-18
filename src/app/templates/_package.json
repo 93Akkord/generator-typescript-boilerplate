@@ -1,0 +1,22 @@
+{
+    "name": "<%= appname %>",
+    "version": "0.0.1",
+    "description": "<%= appname %>",
+    "license": "MIT",
+    "repository": "",
+    "author": {
+        "name": "<%= name %>",
+        "email": "<%= email %>",
+        "url": "https://github.com/<%= name %>"
+    },
+    "keywords": [
+        ""
+    ],
+    "main": "src/index",
+    "scripts": {
+        "build": "tsc -p ./",
+        "watch": "npm run build -- --watch"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+}
