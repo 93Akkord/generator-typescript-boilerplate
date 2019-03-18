@@ -17,6 +17,7 @@
         "watch": "node ./scripts/tsc-watcher.js"
     },
     "dependencies": {
+        "lodash": "^4.17.11",
         "yeoman-generator": "^3.2.0"
     },
     "devDependencies": {
@@ -24,8 +25,8 @@
         "@types/ncp": "^2.0.1",
         "@types/node": "^11.11.3",
         "@types/yeoman-generator": "^3.1.0",
-        "lodash": "^4.17.11",
         "ncp": "^2.0.0",
+        "shelljs": "^0.8.3",
         "tsc-watch": "^2.1.2",
         "tslint": "^5.14.0",
         "typescript": "^3.3.3333",

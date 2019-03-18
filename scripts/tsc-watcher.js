@@ -3,6 +3,7 @@
 
 const TscWatchClient = require('tsc-watch/client');
 const { exec, spawn } = require('./command-line-helpers');
+const shelljs = require('shelljs');
 
 /**
  *
@@ -15,9 +16,9 @@ function runScript(scriptName, scriptRunner = 'npm', callback) {
 }
 
 async function getTsc() {
-    let res = await exec('where tsc');
+    let path = shelljs.which('tsc');
 
-    return res.split('\n')[0].replace(/\\/g, '/');
+    return path.replace(/\\/g, '/');
 }
 
 async function init() {
